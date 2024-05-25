@@ -21,17 +21,19 @@
     background-color: rgba(255, 255, 255, 0.62);
 }
 
-.nav-links{
+.nav-links{;
     display: flex;
     list-style-type: none;
     justify-content: flex-end;
 }
 .nav-links a{
+    font-family: optima ,sans-serif;
+    letter-spacing: 1px;
+    font-weight: max(150,1rem);
     color: #fff;
     text-decoration: none;
     padding: 10px;
     margin: 0 10px;
-    font-weight : 250;
     transition: color 0.3s ease;
 }
 
