@@ -17,11 +17,6 @@ const Projects = () => {
                 ))}
             </div>
         </div>
-        // <div className="project">
-        //     <h2>project 1</h2>
-        //     <p>this is project 1</p>
-        //     <a href="#">Github link</a>
-        // </div>
     )
 }
 
