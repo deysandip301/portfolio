@@ -4,6 +4,7 @@ import Navbar from "./Navbar.jsx";
 import Footer from "./Footer.jsx";
 // import Projects from "./componenets/home/Projects.jsx";
 import './App.css';
+// import Projects from "./componenets/home/Projects.jsx";
 const App = () => {
     return (
         <BrowserRouter>

@@ -1,0 +1,27 @@
+.projects-all{
+    margin-bottom: 8vh;
+    height : 80vh;
+    width : 100vw;
+    background-color: white;
+}
+
+.projects{
+    margin-top : 2%;
+    margin-left : 10%;
+    margin-right : 10%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.projects-text{
+    padding-top: 5%;
+    margin-bottom: 0;
+    margin-top : 0;
+    color: grey;
+    font-family: Veranda , sans-serif;
+    text-align: center;
+    font-size: medium;
+    font-weight: bold;
+    letter-spacing: 0.7px;
+}
+
