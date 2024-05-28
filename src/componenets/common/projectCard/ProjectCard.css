@@ -1,4 +1,4 @@
-.project{
+.project-card{
     width : 25vw;
     aspect-ratio: 5 / 4;
     background-color : #ffffff;
@@ -7,7 +7,7 @@
     transition: box-shadow 0.4s ease;
 }
 
-.project:hover{
+.project-card:hover{
     box-shadow: 0 5px 5px 5px rgba(0, 0, 0, 0.2);
     .project-link {
         color: rgba(200, 200, 200, 1);

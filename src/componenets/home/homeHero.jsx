@@ -1,7 +1,7 @@
 import hero_image from '../../assets/images/hero-image.webp';
-import './Hero.css';
+import './homeHero.css';
 
-const Hero = () => {
+const HomeHero = () => {
     return (
         <section className="hero">
             {/*<div className="hero-image-div">*/}
@@ -23,4 +23,4 @@ const Hero = () => {
     )
 }
 
-export default Hero;
+export default HomeHero;

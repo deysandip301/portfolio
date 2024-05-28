@@ -11,7 +11,7 @@ const Projects = () => {
     return (
         <div className="projects-all">
             <h3 className="projects-text">SOME OF MY LATEST WORK</h3>
-            <div className="projects">
+            <div className="projects-home">
             {projects.map((project, index) => (
                     <ProjectCard key={index} project={project} />
                 ))}

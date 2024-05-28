@@ -1,0 +1,59 @@
+.project-hero{
+    margin-top : 0;
+    height :85vh;
+    width : 100vw;
+    display: flex;
+    justify-content: space-between;
+    background-color: white;
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.1);
+    /*z-index: 1;*/
+}
+
+.project-hero-text {
+    margin-left: 10%;
+    width: 35%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.project-hero-text h1 {
+    font-family: 'Poppins', sans-serif;
+    letter-spacing: -0.3vw;
+    font-size: 5rem;
+    font-weight: 800;
+    color: rgba(0, 0, 0, 0.90);
+    margin-bottom: -5%;
+}
+
+.project-hero-intro {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.5rem;
+    font-weight: lighter;
+    color: rgba(0, 0, 0, 0.59);
+    margin-bottom: 1%;
+}
+
+.project-hero-description {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1rem;
+    font-weight: 00;
+    color: rgba(0, 0, 0, 0.82);
+}
+
+.projectHero-hero-img {
+    margin-right: 10%;
+    margin-top: 5%;
+    width : 40vw;
+    height: 60vh;
+    overflow: hidden;
+    object-fit: cover;
+    background: url('https://via.placeholder.com/150') no-repeat center;
+    background-size: cover;
+}
+
+.projectHero-hero-img:hover {
+    transform: scale(1.05);
+    transition: transform 0.3s ease-in-out;
+}

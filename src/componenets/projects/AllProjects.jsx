@@ -1,4 +1,5 @@
 import ProjectCard from "../common/projectCard/ProjectCard.jsx";
+import './AllProjects.css';
 
 const AllProjects = () => {
     const projects = [
@@ -14,9 +15,11 @@ const AllProjects = () => {
     ];
     return (
         <div className="all-projects">
-            {projects.map((project, index) => (
-                <ProjectCard key={index} project={project} />
-            ))}
+            <div className="projects">
+                {projects.map((project, index) => {
+                    return <ProjectCard key={index} project={project} />
+                })}
+            </div>
         </div>
     )
 }

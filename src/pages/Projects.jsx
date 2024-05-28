@@ -1,10 +1,10 @@
-import Hero from "../componenets/projects/Hero.jsx";
+import ProjectHero from "../componenets/projects/projectHero.jsx";
 import AllProjects from "../componenets/projects/AllProjects.jsx";
 
 const Projects = () => {
     return (
         <div>
-            < Hero />
+            < ProjectHero />
             < AllProjects/>
         </div>
     )

@@ -5,7 +5,7 @@ import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
 
 const ProjectCard = ({project}) => {
     return (
-        <div className="project">
+        <div className="project-card">
             <img className="project-image" src={project.image} alt={project.name} />
             <div className="project-bottom">
                 <div className="project-details">
