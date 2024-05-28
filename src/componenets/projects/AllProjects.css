@@ -2,6 +2,7 @@
     width : 100vw;
     height : 85vw ;
     background-color: white;
+    box-shadow:  0 0 10px 0 inset rgba(0, 0, 0, 0.4);
 }
 
 .projects {
