@@ -4,6 +4,7 @@ import Navbar from "./Navbar.jsx";
 import Footer from "./Footer.jsx";
 import './App.css';
 import Projects from "./pages/Projects.jsx";
+import About from "./pages/About.jsx";
 const App = () => {
     return (
         <BrowserRouter>
@@ -12,7 +13,7 @@ const App = () => {
                 <Route path="/" element={<Home />} />
                 <Route path="/projects" element={<Projects />} />
                 {/*<Route path="/skills" element={<Skills />} />*/}
-                {/*<Route path="/about" element={<About />} />*/}
+                <Route path="/about" element={<About />} />
                 {/*<Route path="/contact" element={<Contact />} />*/}
 
             </Routes>
