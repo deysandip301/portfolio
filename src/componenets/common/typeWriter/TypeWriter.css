@@ -1,0 +1,32 @@
+.typing-effect {
+    background-color: white;
+    display: inline-block;
+    overflow: hidden;
+    white-space: nowrap;
+    margin: 0;
+    padding: 0;
+    font-size: 1.5rem;
+    font-weight: 400;
+    font-family: 'Roboto', sans-serif;
+    color: rgba(200, 200, 200, 1);;
+}
+
+.typing-effect .changing-text .active {
+    color : #242424;
+    opacity: 1;
+    transition: opacity 0.5s ease;
+}
+
+
+@keyframes blink {
+    0% {opacity: 1;}
+    50% {opacity: 0;}
+    100% {opacity: 1;}
+}
+
+.caret {
+    color : #242424;
+    font-size: 2.5rem;
+    /*animation: blink 0.7s infinite;*/
+}
+

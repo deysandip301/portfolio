@@ -1,5 +1,6 @@
 import  { useState , useEffect } from 'react';
 import PropTypes from 'prop-types';
+import './TypeWriter.css';
 
 const TypeWriter = ({
                     text,
@@ -37,15 +38,21 @@ const TypeWriter = ({
         return () => clearTimeout(timeout);
     },[displayedText,isDeleting,index,text,typingSpeed,deletionSpeed]);
 
+    // ... other code
+
     return (
         <div className="typing-effect">
-            <h1>Hi, I&apos;m <span>Sandip Dey</span></h1>
-            <h3>I&apos;m a <span>
+            <h3>I&apos;m a <span className="changing-text">
+            <span className={displayedText ? "active" : ""}>
                 {displayedText}
-                <span className="cadet">|</span>
-            </span></h3>
+            </span>
+            <span className="caret" style={{ color: '#fff' }}>|</span>
+        </span></h3>
         </div>
     )
+
+// ... other code
+
 }
 
 TypeWriter.propTypes = {
