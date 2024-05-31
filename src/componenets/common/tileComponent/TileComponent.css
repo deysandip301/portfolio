@@ -1,0 +1,7 @@
+.tile {
+    display: flex;
+}
+
+.tile.img-right {
+    flex-direction: row-reverse;
+}

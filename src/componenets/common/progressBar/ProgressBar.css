@@ -1,0 +1,6 @@
+.progress-bar{
+    background-color: limegreen;
+    display: flex;
+    justify-content: center;
+    border-radius: 50px;
+}
