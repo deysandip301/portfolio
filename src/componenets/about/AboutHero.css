@@ -1,0 +1,82 @@
+.about-hero {
+    height : 90vh;
+    /*width : 100vw;*/
+    background-color: white;
+    padding-left : 10vw;
+    padding-right : 10vw;
+    padding-top: 5vh;
+    display: flex;
+    /*flex-wrap: wrap;*/
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.about-tile {
+    height : 90%;
+    width : 100%;
+    display: flex;
+    /*justify-content: flex-start ;*/
+    align-items: center;
+}
+
+
+.about-tile .tile .text-parent h2 {
+    font-size: 3rem;
+    font-weight: 800;
+    font-family: 'Poppins', sans-serif;
+    letter-spacing: -0.3vw;
+    color : rgba(0,0,0,0.59)
+}
+
+.about-tile .tile .text-parent h2 .name-bold {
+    color : rgba(0,0,0,1);
+    font-weight : 1000;
+
+}
+
+.about-tile .tile .text-parent h3 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.5rem;
+    font-weight: lighter;
+    color: rgba(200, 200, 200, 1);
+    margin-bottom: 1%;
+}
+
+.about-tile .tile .text-parent .text {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.2rem;
+    font-weight: 00;
+    color: rgba(0, 0, 0, 1);
+}
+
+.about-tile .tile .text-parent {
+    width : 40%;
+}
+
+.about-tile .tile .img-parent {
+    width : 35%;
+    display : flex;
+    justify-content : center;
+    align-items : center;
+}
+
+.about-tile .tile .img-parent img {
+    width : 100%;
+    aspect-ratio: 1 / 1;
+    overflow: hidden;
+    transition: transform 0.5s ease;
+}
+
+.about-tile .tile .img-parent img:hover {
+    transform: scale(1.1);
+}
+
+.about-hero .typing-effect {
+font-size: 2.5rem;
+    font-weight: 800;
+    font-family: 'Poppins', sans-serif;
+    letter-spacing: -0.2vw;
+    color : rgba(0,0,0,0.59);
+    margin-top: 1rem;
+}

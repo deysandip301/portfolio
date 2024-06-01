@@ -1,7 +1,6 @@
 import PropTypes from 'prop-types';
 import "./TileComponent.css";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faCode, faCoffee, faCogs } from '@fortawesome/free-solid-svg-icons';
 
 function TileComponent({ header, subHeader, img, icon, text, link, linkText, position, bgColor }) {
     return (
@@ -32,6 +31,7 @@ function TileComponent({ header, subHeader, img, icon, text, link, linkText, pos
 }
 
 TileComponent.propTypes = {
+    header: PropTypes.oneOfType([PropTypes.string, PropTypes.object]),
     subHeader: PropTypes.string,
     img: PropTypes.string,
     icon: PropTypes.object,
