@@ -48,8 +48,8 @@
     height: 60vh;
     overflow: hidden;
     object-fit: cover;
-    background: url('https://via.placeholder.com/150') no-repeat center;
     background-size: cover;
+    background-color: white;
 }
 
 .projectHero-hero-img:hover {

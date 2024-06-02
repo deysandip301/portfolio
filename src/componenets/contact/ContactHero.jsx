@@ -1,6 +1,8 @@
 import './ContactHero.css';
 import { motion } from "framer-motion";
 import { FaTwitter, FaFacebook, FaInstagram, FaLinkedin } from 'react-icons/fa';
+import contactImage from '../../assets/images/hero-image.webp';
+
 
 const ContactHero = () => {
     return (
@@ -49,7 +51,7 @@ const ContactHero = () => {
                 exit={{x: -100}}
                 transition={{duration: 0.5}}
             >
-                <img className={"contact-img"} src="/src/assets/images/hero-image.webp" alt={"contact"}/>
+                <img className={"contact-img"} src={contactImage} alt={"contact"}/>
             </motion.div>
         </div>
     )

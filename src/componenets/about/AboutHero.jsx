@@ -1,6 +1,7 @@
 import  './AboutHero.css';
 import TileComponent from "../common/tileComponent/index.js";
 import TypeWriter from "../common/typeWriter/TypeWriter.jsx";
+import aboutHeroImage from "/src/assets/images/hero-image.webp";
 
 const AboutHero = () => {
     return (
@@ -12,7 +13,7 @@ const AboutHero = () => {
                                text={'I am a software developer and a tech enthusiast. ' +
                                    'I have a passion for learning new technologies and building innovative solutions.' +
                                    ' I am always eager to learn new technologies and improve my existing skills.'}
-                               img={"https://via.placeholder.com/150"}
+                               img={aboutHeroImage}
                                position={'img-right'}
                 />
             </div>
