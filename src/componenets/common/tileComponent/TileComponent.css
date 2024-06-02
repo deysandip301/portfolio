@@ -5,3 +5,10 @@
 .tile.img-right {
     flex-direction: row-reverse;
 }
+
+
+.icon {
+    margin : 0 1rem;
+    height : 10vh;
+    aspect-ratio: 1 / 1;
+}

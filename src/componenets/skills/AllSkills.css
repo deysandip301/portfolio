@@ -1,0 +1,43 @@
+.all-skills{
+    background-color: white;
+    width : 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    padding-bottom: 10vh;
+    padding-top : 10vh;
+    box-shadow: inset rgba(59,59,59,0.75) 0px 0px 10px 0px;
+}
+
+.all-skills .skill-card {
+    background-color: rgba(240, 240, 240, 1);
+    border-radius: 20px;
+    padding : 20px;
+    margin : 20px;
+    transition: background-color 0.5s ease;
+}
+
+.all-skills .skill-card:hover {
+    background-color: rgba(200, 200, 200, 1);
+
+}
+
+.all-skills .tile .text-parent h2{
+    font-size: 3rem;
+    color : #242424;
+    margin: 1rem;
+}
+
+.all-skills .tile .icon{
+    color : #242424;
+    font-size: 3rem;
+    margin: 1rem;
+}
+
+.all-skills .tile .text-parent .text{
+    font-size: 1.25rem;
+    color : #1a1a1a;
+    margin: 1rem;
+}

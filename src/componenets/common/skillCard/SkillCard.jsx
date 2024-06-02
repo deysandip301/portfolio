@@ -1,18 +1,21 @@
+import './SkillCard.css';
 import TileComponent from "../tileComponent/index.js";
 import ProgressBar from "../progressBar/index.js";
-import { library } from '@fortawesome/fontawesome-svg-core'
-import { fab } from '@fortawesome/free-brands-svg-icons'
-import { fas } from '@fortawesome/free-solid-svg-icons'
-import { far } from '@fortawesome/free-regular-svg-icons'
-library.add(fab, fas, far)
+import { fas, faCode, faCoffee, faCogs } from '@fortawesome/free-solid-svg-icons'
 
-function SkillCard({skillname, skilldescription, skillimage, skillicon, skillpercent, skillposition}) {
+function SkillCard({skillname, skilldescription, skillimage, skillicon, skillpercent, skillposition, width ,progressBarcolor}) {
     const tileDirection = skillposition === 'right' ?  ''  : 'img-right';
-    const progressdirection = skillposition === 'right' ? 'rtl' : 'ltr';
+    const progressdirection = skillposition === 'right' ? 'ltr' : 'rtl';
     return (
-        <div className="skill-card">
-            <TileComponent header={`${skillname}`} text={`${skilldescription}`} img={`${skillimage}`} icon={skillicon} position={tileDirection} />
-            <ProgressBar percent={`${skillpercent}`} useAnimation={false} direction={progressdirection} />
+        <div className="skill-card" style={{width: `${width}vw` , }}>
+            <TileComponent
+                header={`${skillname}`}
+                text={`${skilldescription}`}
+                img={`${skillimage}`}
+                icon={skillicon}
+                position={tileDirection}
+            />
+            <ProgressBar percent={`${skillpercent}`} useAnimation={false} direction={progressdirection} bgColor={progressBarcolor} />
         </div>
     )
 }

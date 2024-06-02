@@ -1,61 +1,17 @@
-import SkillCard from "../home/SkillCard.jsx";
-import { faCogs, faCode, faCoffee, faHtml5, faCss3Alt, faJsSquare } from '@fortawesome/free-solid-svg-icons';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import "./SkillHero.css";
+import TileComponent from "../common/tileComponent/index.js";
 
-// const skills = [
-//     {
-//         skillname: 'C',
-//         skilldescription: 'Proficient in procedural programming, memory management, and low-level system tasks.',
-//         skillimage: '', // Add the URL of the image for C
-//         skillicon: <FontAwesomeIcon icon={faCogs} />, // Use the FontAwesomeIcon component
-//         skillpercent: 80 // Add the proficiency percentage for C
-//     },
-//     {
-//         skillname: 'C++',
-//         skilldescription: 'Experienced in object-oriented programming, template metaprogramming, and STL.',
-//         skillimage: '', // Add the URL of the image for C++
-//         skillicon: <FontAwesomeIcon icon={faCode} />, // Use the FontAwesomeIcon component
-//         skillpercent: 85 // Add the proficiency percentage for C++
-//     },
-//     {
-//         skillname: 'Java',
-//         skilldescription: 'Skilled in object-oriented programming, multithreading, and JVM.',
-//         skillimage: '', // Add the URL of the image for Java
-//         skillicon: <FontAwesomeIcon icon={faCoffee} />, // Use the FontAwesomeIcon component
-//         skillpercent: 80 // Add the proficiency percentage for Java
-//     },
-//     {
-//         skillname: 'HTML',
-//         skilldescription: 'Expert in creating structured and semantic markup for web pages.',
-//         skillimage: '', // Add the URL of the image for HTML
-//         skillicon: <FontAwesomeIcon icon={faHtml5} />, // Use the FontAwesomeIcon component
-//         skillpercent: 75 // Add the proficiency percentage for HTML
-//     },
-//     {
-//         skillname: 'CSS',
-//         skilldescription: 'Proficient in creating responsive and visually appealing web pages.',
-//         skillimage: '', // Add the URL of the image for CSS
-//         skillicon: <FontAwesomeIcon icon={faCss3Alt} />, // Use the FontAwesomeIcon component
-//         skillpercent: 65 // Add the proficiency percentage for CSS
-//     },
-//     {
-//         skillname: 'JavaScript',
-//         skilldescription: 'Expert in creating interactive web pages and single-page applications.',
-//         skillimage: '', // Add the URL of the image for JavaScript
-//         skillicon: <FontAwesomeIcon icon={faJsSquare} />, // Use the FontAwesomeIcon component
-//         skillpercent: 70 // Add the proficiency percentage for JavaScript
-//     }
-// ];
+
 const SkillHero = () => {
     return (
         <div className="skill-hero">
-            <h1>Skills</h1>
-            {skills.map((skill, index) => {
-                const position = index % 2 === 0 ? 'right' : 'left';
-                return <SkillCard key={index} skillname={skill.skillname} skilldescription={skill.skilldescription} skillimage={skill.skillimage} skillicon={skill.skillicon} skillpercent={skill.skillpercent} skillposition={position}  skill={'skills'}/>
-            })}
+            < TileComponent header={'Skills'}
+                            text={'I have acquired a variety of skills over the years like C, C++, Java, HTML, CSS, and JavaScript web development and design. I am always eager to learn new technologies and improve my existing skills.'}
+                            subHeader={'Here are some of the skills that I have acquired over the years.'}
+                            img={"https://via.placeholder.com/150"}
+                            position={'img-right'}/>
         </div>
-    )
-}
+    );
+};
 
 export default SkillHero;

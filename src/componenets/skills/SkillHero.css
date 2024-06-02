@@ -1,0 +1,71 @@
+.skill-hero {
+    height : 100vh;
+    margin-top : 0;
+    background-color : white;
+    box-shadow: rgba(59,59,59,0.75) 0px 0px 10px 0px;
+}
+
+.skill-hero h1 {
+    margin-top: 0;
+}
+
+.skill-hero .tile {
+    padding-top: 10%;
+    margin-left : 10%;
+    margin-right : 10%;
+    width : 80%;
+    display : flex;
+    justify-content : space-between;
+    align-items : center;
+}
+
+.skill-hero .tile .img-parent {
+    width : 40%;
+    display : flex;
+    justify-content : center;
+    align-items : center;
+}
+
+.skill-hero .tile .img-parent img {
+    width : 100%;
+    aspect-ratio: 1 / 1;
+    overflow: hidden;
+    transition: transform 0.5s ease;
+}
+
+.skill-hero .tile .img-parent img:hover {
+    transform: scale(1.1);
+
+}
+
+.skill-hero .tile .text-parent {
+    width : 40%;
+    color: #242424;
+}
+
+.skill-hero .tile .text-parent h2 {
+    font-size : 5rem;
+    font-weight : 800;
+    font-family : 'Poppins', sans-serif;
+    letter-spacing: -0.3vw;
+}
+
+.skill-hero .tile .text-parent h3 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.5rem;
+    font-weight: lighter;
+    color: rgba(0, 0, 0, 0.59);
+    margin-bottom: 1%;
+}
+
+.skill-hero .tile .text-parent .text {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1rem;
+    font-weight: 00;
+    color: rgba(0, 0, 0, 0.82);
+}
+
+.skill-hero .tile .text-parent .text p {
+    margin-top : 5%;
+}
+

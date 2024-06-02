@@ -1,12 +1,14 @@
 import PropTypes from 'prop-types';
 import "./TileComponent.css";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faCode, faCoffee, faCogs } from '@fortawesome/free-solid-svg-icons';
 
 function TileComponent({ header, subHeader, img, icon, text, link, linkText, position, bgColor }) {
     return (
         <div className={`tile ${position}`} style={{backgroundColor: bgColor}}>
             {icon ? (
                 <div className="icon-parent">
-                    {icon}
+                    <FontAwesomeIcon className={"icon"} icon={icon} />
                 </div>
             ) : img && (
                 <div className="img-parent">
@@ -30,16 +32,14 @@ function TileComponent({ header, subHeader, img, icon, text, link, linkText, pos
 }
 
 TileComponent.propTypes = {
-    header: PropTypes.string,
     subHeader: PropTypes.string,
     img: PropTypes.string,
-    icon: PropTypes.node,
+    icon: PropTypes.object,
     text: PropTypes.string,
     link: PropTypes.string,
     linkText: PropTypes.string,
     position: PropTypes.string,
     bgColor: PropTypes.string
 };
-
 
 export default TileComponent;

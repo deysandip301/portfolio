@@ -3,7 +3,8 @@ import PropTypes from 'prop-types';
 import './TypeWriter.css';
 
 const TypeWriter = ({
-                    text,
+                    constantText="I'm a ",
+                    changingText,
                     typingSpeed=100,
                     deletionSpeed=50
                 }) => {
@@ -14,8 +15,8 @@ const TypeWriter = ({
     useEffect(() => {
         const handleTyping = () => {
             if(!isDeleting) {
-                if(displayedText.length < text[index].length) {
-                    setDisplayedText((prev) => prev + text[index].charAt(prev.length));
+                if(displayedText.length < changingText[index].length) {
+                    setDisplayedText((prev) => prev + changingText[index].charAt(prev.length));
                 }
                 else {
                     setTimeout(() => setIsDeleting(true),1000);
@@ -27,7 +28,7 @@ const TypeWriter = ({
                 }
                 else {
                     setIsDeleting(false);
-                    setIndex((prev) => (prev+1)%text.length);
+                    setIndex((prev) => (prev+1)%changingText.length);
                 }
             }
         };
@@ -36,13 +37,13 @@ const TypeWriter = ({
             isDeleting ? deletionSpeed : typingSpeed
         );
         return () => clearTimeout(timeout);
-    },[displayedText,isDeleting,index,text,typingSpeed,deletionSpeed]);
+    },[displayedText,isDeleting,index,changingText,typingSpeed,deletionSpeed]);
 
     // ... other code
 
     return (
         <div className="typing-effect">
-            <h3>I&apos;m a <span className="changing-text">
+            <h3>{constantText} <span className="changing-text">
             <span className={displayedText ? "active" : ""}>
                 {displayedText}
             </span>
@@ -56,7 +57,8 @@ const TypeWriter = ({
 }
 
 TypeWriter.propTypes = {
-    text: PropTypes.arrayOf(PropTypes.string).isRequired,
+    constantText: PropTypes.string,
+    changingText: PropTypes.arrayOf(PropTypes.string).isRequired,
     typingSpeed: PropTypes.number,
     deletionSpeed: PropTypes.number
 };
