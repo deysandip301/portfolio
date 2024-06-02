@@ -17,7 +17,7 @@ const AboutHero = () => {
                 />
             </div>
             <div className="about-typing">
-                < TypeWriter constantText={"I am a "} changingText={["Competitive programmer" , "Web developer", "Tech enthusiast", "Explorer"]} typingSpeed={100} deletionSpeed={50}/>
+                < TypeWriter constantText={"I am "} changingText={["Competitive programmer" , "Web developer", "Tech enthusiast", "Explorer"]} typingSpeed={100} deletionSpeed={50}/>
             </div>
             </div>
     )

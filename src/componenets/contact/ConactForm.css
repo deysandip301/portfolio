@@ -1,0 +1,112 @@
+.contact-form {
+    padding-top : 5vh;
+    width: 100vw;
+    height : 100vh;
+    text-align: center;
+    background-color: white;
+    box-shadow:  rgba(59, 59, 59, 0.75) 0px 0px 10px 0px;
+}
+
+.contact-form h3 {
+    margin-top : 5vh;
+    font-size: 5rem;
+    font-weight: 800;
+    font-family: 'Poppins', sans-serif;
+    letter-spacing: -0.25vw;
+    color : rgba(60,60,60,01);
+    margin-bottom: 0;
+}
+
+.all-inputs {
+    height: 80%;
+    width: 80%;
+    margin-left: 10%;
+    margin-right : 10%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.all-inputs .inputs {
+    height : 70%;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.all-inputs .inputs .name-and-email {
+    height : 60%;
+    width: 35%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+}
+
+.all-inputs .inputs .message-input {
+    height : 60%;
+    width: 45%;
+}
+
+.all-inputs .inputs .message-input .input-item {
+    height : 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.all-inputs .inputs .message-input .input-item textarea {
+    height : 80%;
+    width: 100%;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+}
+
+.all-inputs .inputs .name-and-email .input-item {
+    height : 40%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+
+}
+
+.all-inputs .inputs .name-and-email input {
+    height : 40%;
+    width: 100%;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+}
+
+.all-inputs .inputs .name-and-email input {
+    width: 100%;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+}
+
+.all-inputs .inputs .message-input textarea {
+    width: 100%;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+}
+
+.contact-form .submit-button {
+    height : 10%;
+    width: 20%;
+    border-radius: 5vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.contact-form .all-inputs .inputs .input-item label {
+    font-size: 1.5rem;
+    font-weight: 800;
+    font-family: 'Poppins', sans-serif;
+    color: rgba(0, 0, 0, 0.59);
+}

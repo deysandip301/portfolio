@@ -7,17 +7,25 @@
     width: 100vw;
 }
 
-.logo{
+.logo {
+    display: flex;
+    align-items: center;
+    margin-left: 10%;
+    justify-content: center;
+    height: 70%;
+}
+
+.logo-img{
+    overflow:  hidden;
     margin-left: 10%;
     height : 70%;
     aspect-ratio: 1 / 1 ;
-    /*color : white;*/
     background-color: #fff;
     border-radius: 50%;
     transition: background-color 0.3s ease;
 }
 
-.logo:hover{
+.logo-img:hover{
     background-color: rgba(255, 255, 255, 0.62);
 }
 
@@ -48,6 +56,8 @@
 }
 
 .social-links a{
+    font-family: optima ,sans-serif;
+    height : 70%;
     aspect-ratio: 1 / 1;
     color: #fff;
     text-decoration: none;
