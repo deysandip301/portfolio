@@ -1,6 +1,6 @@
 import './Navbar.css';
 import {motion} from 'framer-motion';
-import {useLocation} from 'react-router-dom';
+import {Link, useLocation} from 'react-router-dom';
 import logo from './assets/images/logoSD.svg';
 // import { ReactComponent as Logo } from './logo.svg';
 // import { ReactComponent as LogoSD } from './logoSD.svg';
@@ -20,28 +20,28 @@ const Navbar = () => {
         >
             {/* Your existing code here */}
             <nav className="navbar">
-                <a href="/" className="logo">
+                <Link to="/" className="logo">
                     <img className="logo-img" src={logo} alt="logo"/>
-                </a>
+                </Link>
                 <ul className="nav-links">
-                    <li><a href="/projects">Projects</a></li>
-                    <li><a href="/skills">Skills</a></li>
-                    <li><a href="/about">About</a></li>
-                    <li><a href="/contact">Contact</a></li>
+                    <li><Link to="/projects">Projects</Link></li>
+                    <li><Link to="/skills">Skills</Link></li>
+                    <li><Link to="/about">About</Link></li>
+                    <li><Link to="/contact">Contact</Link></li>
                 </ul>
 
                 <ul className="social-links">
-                    <li><a href="https://www.linkedin.com/in/sandipdey301/" target="_blank"><FontAwesomeIcon
-                        icon={faLinkedin} size="2x"/></a></li>
-                    <li><a href="https://x.com/deysandip301/" target="_blank"><FontAwesomeIcon icon={faTwitter}
-                                                                                               size="2x"/></a>
+                    <li><Link to="https://www.linkedin.com/in/sandipdey301/" target="_blank"><FontAwesomeIcon
+                        icon={faLinkedin} size="2x"/></Link></li>
+                    <li><Link to="https://x.com/deysandip301/" target="_blank"><FontAwesomeIcon icon={faTwitter}
+                                                                                               size="2x"/></Link>
                     </li>
-                    <li><a href="https://www.facebook.com/deysandip301/" target="_blank"><FontAwesomeIcon
+                    <li><Link to="https://www.facebook.com/deysandip301/" target="_blank"><FontAwesomeIcon
                         icon={faFacebook}
-                        size="2x"/></a>
+                        size="2x"/></Link>
                     </li>
-                    <li><a href="https://www.instagram.com/deysandip301/" target="_blank"><FontAwesomeIcon
-                        icon={faInstagram} size="2x"/></a></li>
+                    <li><Link to="https://www.instagram.com/deysandip301/" target="_blank"><FontAwesomeIcon
+                        icon={faInstagram} size="2x"/></Link></li>
                 </ul>
             </nav>
         </motion.div>

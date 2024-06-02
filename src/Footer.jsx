@@ -1,6 +1,7 @@
 import './Footer.css';
 import { faChevronUp } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import {Link} from "react-router-dom";
 
 const Footer = () => {
     const scrollToTop = () => {
@@ -16,10 +17,10 @@ const Footer = () => {
                 <div className="footer-content">
                     <p className="copyright">&copy; 2024 Sandip Dey</p>
                     <ul className="footer-links">
-                        <li><a href="/projects">Projects</a></li>
-                        <li><a href="/skills">Skills</a></li>
-                        <li><a href="/about">About</a></li>
-                        <li><a href="/contact">Contact</a></li>
+                        <li><Link to="/projects">Projects</Link></li>
+                        <li><Link to="/skills">Skills</Link></li>
+                        <li><Link to="/about">About</Link></li>
+                        <li><Link to="/contact">Contact</Link></li>
                     </ul>
                 </div>
                 <div className="arrow-up-wrapper">
@@ -29,7 +30,7 @@ const Footer = () => {
                 </div>
             </div>
             <div className="credit">
-                Designed and maintained by <a href="https://www.linkedin.com/in/sandipdey301/" target="_blank" rel="noopener noreferrer">Sandip Dey</a>
+                Designed and maintained by <Link to="https://www.linkedin.com/in/sandipdey301/" target="_blank" rel="noopener noreferrer">Sandip Dey</Link>
             </div>
         </footer>
     );

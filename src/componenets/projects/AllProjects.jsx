@@ -1,17 +1,18 @@
 import ProjectCard from "../common/projectCard/ProjectCard.jsx";
 import './AllProjects.css';
+import imageEditor from '/src/assets/images/image_editor.webp';
 
 const AllProjects = () => {
     const projects = [
-        {name: "Project 1", description: "This is project 1", link: "#", image: "https://via.placeholder.com/150"},
-        {name: "Project 2", description: "This is project 2", link: "#", image: "https://via.placeholder.com/150"},
-        {name: "Project 3", description: "This is project 3", link: "#", image: "https://via.placeholder.com/150"},
-        {name: "Project 4", description: "This is project 4", link: "#", image: "https://via.placeholder.com/150"},
-        {name: "Project 5", description: "This is project 5", link: "#", image: "https://via.placeholder.com/150"},
-        {name: "Project 6", description: "This is project 6", link: "#", image: "https://via.placeholder.com/150"},
-        {name: "Project 7", description: "This is project 7", link: "#", image: "https://via.placeholder.com/150"},
-        {name: "Project 8", description: "This is project 8", link: "#", image: "https://via.placeholder.com/150"},
-        {name: "Project 9", description: "This is project 9", link: "#", image: "https://via.placeholder.com/150"},
+        {name: "CLI image editor", description: "This is a basic command line image editor with many functionality", link: "https://github.com/deysandip301/Image-Editor", image: imageEditor},
+        {name: "Web scrapper", description: "This is a scrapper which returns the 10 most affordable product searched by user", link: "https://github.com/deysandip301/web_scrapper", image: "https://via.placeholder.com/150"},
+        {name: "To do list", description: "Advanced to do list with prioritising tasks ", link: "https://github.com/deysandip301/To-do-list", image: "https://via.placeholder.com/150"},
+        {name: "music player", description: "A basic music player with many functionalities.", link: "https://github.com/deysandip301/music_player", image: "https://via.placeholder.com/150"},
+        {name: "Skill overflow", description: "This is a resource website to learn any type of tech stack with detailed roadmap", link: "https://github.com/deysandip301/skill-overflow", image: "https://via.placeholder.com/150"},
+        {name: "Ecommerce backend", description: "Mock backend of an ecommerce business company", link: "https://github.com/deysandip301/Ecommerce-Backend", image: "https://via.placeholder.com/150"},
+        {name: "Tic Tac Toe", description: "CLI based tic tac toe game with extensible OOPs used java backend project", link: "https://github.com/deysandip301/TicTacToe", image: "https://via.placeholder.com/150"},
+        {name: "Quiz app", description: "This is a basic quiz app with attractive UI and randomisation of questions", link: "https://github.com/deysandip301/Quiz-app", image: "https://via.placeholder.com/150"},
+        {name: "Portfolio website", description: "This is my portfolio made with react with attractive design", link: "https://github.com/deysandip301/portfolio", image: "https://via.placeholder.com/150"},
     ];
     return (
         <div className="all-projects">

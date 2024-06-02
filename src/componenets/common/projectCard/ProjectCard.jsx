@@ -2,6 +2,7 @@ import PropTypes from 'prop-types';
 import './ProjectCard.css';
 import {faChevronRight} from "@fortawesome/free-solid-svg-icons";
 import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
+import {Link} from "react-router-dom";
 
 const ProjectCard = ({project}) => {
     return (
@@ -12,7 +13,7 @@ const ProjectCard = ({project}) => {
                     <h2 className="project-name">{project.name}</h2>
                     <p className="project-desc">{project.description}</p>
                 </div>
-                <a className="project-link" href={project.link}><FontAwesomeIcon icon={faChevronRight} size="3x"/></a>
+                <Link className="project-link" to={project.link}><FontAwesomeIcon icon={faChevronRight} size="3x"/></Link>
             </div>
         </div>
     )

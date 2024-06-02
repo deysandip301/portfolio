@@ -2,9 +2,9 @@ import ProjectCard from "../common/projectCard/ProjectCard.jsx";
 import './Projects.css';
 const Projects = () => {
     const projects = [
-        {name: "Project 1", description: "This is project 1", link: "#", image: "https://via.placeholder.com/150"},
-        {name: "Project 2", description: "This is project 2", link: "#", image: "https://via.placeholder.com/150"},
-        {name: "Project 3", description: "This is project 3", link: "#", image: "https://via.placeholder.com/150"},
+        {name: "CLI image editor", description: "This is a basic command line image editor with many functionality", link: "https://github.com/deysandip301/Image-Editor", image: "https://via.placeholder.com/150"},
+        {name: "Web scrapper", description: "This is a scrapper which returns the 10 most affordable product searched by user", link: "https://github.com/deysandip301/web_scrapper", image: "https://via.placeholder.com/150"},
+        {name: "To do list", description: "Advanced to do list with prioritising tasks ", link: "https://github.com/deysandip301/To-do-list", image: "https://via.placeholder.com/150"},
         // Add more projects here
     ];
 

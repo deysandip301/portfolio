@@ -1,6 +1,7 @@
 import PropTypes from 'prop-types';
 import "./TileComponent.css";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import {Link} from "react-router-dom";
 
 function TileComponent({ header, subHeader, img, icon, text, link, linkText, position, bgColor }) {
     return (
@@ -21,7 +22,7 @@ function TileComponent({ header, subHeader, img, icon, text, link, linkText, pos
                     {text && <div className="text">{text}</div>}
                     {link && (
                         <div className="link-parent">
-                            <a href={link} className="link">{linkText}</a>
+                            <Link to={link} className="link">{linkText}</Link>
                         </div>
                     )}
                 </div>
