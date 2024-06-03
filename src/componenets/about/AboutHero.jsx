@@ -1,7 +1,7 @@
 import  './AboutHero.css';
 import TileComponent from "../common/tileComponent/index.js";
 import TypeWriter from "../common/typeWriter/TypeWriter.jsx";
-import aboutHeroImage from "/src/assets/images/hero-image.webp";
+import aboutHeroImage from "/src/assets/images/hero_image.webp";
 
 const AboutHero = () => {
     return (

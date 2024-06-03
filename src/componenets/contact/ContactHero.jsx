@@ -1,7 +1,7 @@
 import './ContactHero.css';
 import { motion } from "framer-motion";
 import { FaTwitter, FaFacebook, FaInstagram, FaLinkedin } from 'react-icons/fa';
-import contactImage from '../../assets/images/hero-image.webp';
+import contactImage from '../../assets/images/hero_image.webp';
 
 
 const ContactHero = () => {

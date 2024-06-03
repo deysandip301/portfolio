@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import hero_image from '../../assets/images/hero-image.webp';
+import hero_image from '../../assets/images/hero_image.webp';
 import './homeHero.css';
 
 const HomeHero = () => {
