@@ -26,6 +26,10 @@
     overflow: hidden;
     transition: transform 0.5s ease;
 }
+.contact-image img:hover {
+    transform: scale(1.05);
+
+}
 
 .contact-details h1 {
     font-size: 5rem;
