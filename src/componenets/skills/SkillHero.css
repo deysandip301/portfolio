@@ -2,6 +2,9 @@
     height : 100vh;
     margin-top : 0;
     background-color : white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     box-shadow: rgba(59,59,59,0.75) 0px 0px 10px 0px;
 }
 
@@ -13,33 +16,34 @@
     padding-top: 5%;
     margin-left : 10%;
     margin-right : 10%;
-    width : 80%;
+    width : 65%;
     display : flex;
     justify-content : space-between;
     align-items : center;
 }
 
-.skill-hero .tile .img-parent {
+.skill-hero  .skill-hero-image {
+    margin-right : 10%;
     width : 40%;
     display : flex;
     justify-content : center;
     align-items : center;
 }
 
-.skill-hero .tile .img-parent img {
+.skill-hero  .skill-hero-image img {
     width : 100%;
     aspect-ratio: 1 / 1;
     overflow: hidden;
     transition: transform 0.5s ease;
 }
 
-.skill-hero .tile .img-parent img:hover {
+.skill-hero .skill-hero-image img:hover {
     transform: scale(1.1);
 
 }
 
 .skill-hero .tile .text-parent {
-    width : 40%;
+    width : 100%;
     color: #242424;
 }
 
@@ -48,6 +52,7 @@
     font-weight : 800;
     font-family : 'Poppins', sans-serif;
     letter-spacing: -0.3vw;
+    margin-bottom: 1%;
 }
 
 .skill-hero .tile .text-parent h3 {
