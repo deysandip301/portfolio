@@ -20,7 +20,7 @@ const skills = [
     },
     {
         skillname: 'Java',
-        skilldescription: 'Skilled in object-oriented programming, multithreading, and JVM.',
+        skilldescription: 'Skilled in object-oriented programming and java with good hold on DSA and designing.',
         skillimage: '', // Add the URL of the image for Java
         skillicon: faCoffee,
         skillpercent: 80 // Add the proficiency percentage for Java
