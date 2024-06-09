@@ -69,3 +69,24 @@
 .social-links a:hover{
     color: rgba(255, 255, 255, 0.62);
 }
+
+
+@media (max-width: 768px) {
+    .nav-links, .social-links {
+        display: none;
+    }
+
+    .burger-menu {
+        display: block;
+    }
+}
+
+@media (min-width: 769px) {
+    .burger-menu {
+        display: none;
+    }
+
+    .nav-links, .social-links {
+        display: flex;
+    }
+}

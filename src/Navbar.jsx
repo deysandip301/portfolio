@@ -6,6 +6,7 @@ import logo from './assets/images/logoSD.svg';
 // import { ReactComponent as LogoSD } from './logoSD.svg';
 import {FontAwesomeIcon} from '@fortawesome/react-fontawesome';
 import {faLinkedin, faTwitter, faFacebook, faInstagram} from '@fortawesome/free-brands-svg-icons';
+import BurgerMenu from "./BurgerMenu.jsx";
 
 const Navbar = () => {
     const location = useLocation();
@@ -18,8 +19,8 @@ const Navbar = () => {
             exit={{y: -100}}
             transition={{duration: 0.5}}
         >
-            {/* Your existing code here */}
             <nav className="navbar">
+                <BurgerMenu />
                 <Link to="/" className="logo">
                     <img className="logo-img" src={logo} alt="logo"/>
                 </Link>
